@@ -109,18 +109,18 @@
 }
 
 .intro {
-  margin-top: 92px;
-  margin-bottom: 92px;
-  margin-right: auto;
-  width: 690px;
+  margin: 92px auto;
+  width: 984px;
   height: 429px;
 }
 
 .intro__title {
   font-style: normal;
-  font-weight: 900;
+  font-family: "Black";
   font-size: 54px;
   line-height: 58px;
+  width: 690px;
+  margin: 0;
 }
 
 .intro__text {
@@ -129,6 +129,11 @@
   font-size: 16px;
   line-height: 163%;
   margin: 40px 0 33px;
+  width: 690px;
+}
+
+.intro__number {
+  font-weight: normal;
 }
 
 .intro__list {
@@ -139,6 +144,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 690px;
 }
 
 .photo-grid {
