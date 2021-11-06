@@ -24,7 +24,7 @@
   background-color: #2a2c2f;
   min-width: 1280px;
   color: #ffffff;
-  padding: 28px 48px 0;
+  padding: 28px 48px 24px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 /* header */
@@ -316,13 +316,14 @@
   display: flex;
   justify-content: space-between;
   margin: 92px auto 0;
-  width: 1184px;
-  height: 740px;
+  max-width: 1184px;
+  max-height: 18px;
 }
 
 .footer__links  {
   margin: 0;
   padding: 0;
+  height: 18px;
 }
 
 .footer__link {
@@ -331,7 +332,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   transition: opacity .1s linear;
 }
 
@@ -348,6 +349,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-align: right;
 }
