@@ -1,8 +1,9 @@
+/* улучшение шрифтов и настройка для падингов */
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+/* импортирование обычного шрифта */
 @font-face {
   font-family: "Inter";
   src: url(../vendor/fonts/Inter-Regular.woff) format("woff"),
@@ -10,7 +11,7 @@
     url(../vendor/fonts/Inter-Regular.ttf) format("ttf"),
     url(../vendor/fonts/Inter-Regular.svg) format("svg");
 }
-
+/* импортирование жирного шрифта */
 @font-face {
   font-family: "Black";
   src: url(../vendor/fonts/Inter-Black.woff) format("woff"),
@@ -18,7 +19,7 @@
     url(../vendor/fonts/Inter-Black.ttf) format("ttf"),
     url(../vendor/fonts/Inter-Black.svg) format("svg");
 }
-
+/* тип сайта */
 .page {
   background-color: #2a2c2f;
   min-width: 1280px;
@@ -26,7 +27,7 @@
   padding: 28px 48px 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-
+/* header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -53,12 +54,22 @@
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
+  transition: opacity .1s linear;
 }
 
 .header__link:first-child {
   margin-left: auto;
 }
 
+.header__lang-link:hover {
+  opacity: 45%;
+}
+
+.header__lang-link:active {
+  text-decoration: underline;
+}
+
+/* lead */
 .lead {
   max-width: 984px;
   max-height: 1005px;
@@ -105,7 +116,7 @@
   /* width: 158px;
   height: 14px; */
 }
-
+/* intro */
 .intro {
   margin: 92px auto;
   width: 984px;
@@ -144,7 +155,7 @@
   padding: 0;
   width: 690px;
 }
-
+/* photo-grid */
 .photo-grid {
   width: 1184px;
   height: 671px;
@@ -158,7 +169,7 @@
   max-width: 284px;
   max-height: 213px;
 }
-
+/* places */
 .places {
   max-width: 984px;
   max-height: 3392px;
@@ -228,6 +239,11 @@
   line-height: 1.22;
   text-decoration-line: underline;
   color: white;
+  transition: opacity .1s linear;
+}
+
+.place__link:hover {
+  opacity: 45%;
 }
 
 .place__text {
@@ -243,7 +259,7 @@
   font-size: 18px;
   line-height: 1.63;
 }
-
+/* cover */
 .cover {
   position: relative;
   width: 1184px;
@@ -255,6 +271,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .cover::before {
   content: "";
   background-color: #2a2c2f;
@@ -265,6 +282,7 @@
   bottom: 0;
   right: 0;
 }
+
 .cover__title {
   font-family: "Black", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -276,6 +294,12 @@
   margin: 245px auto 0px;
   z-index: 1;
 }
+
+.cover__link {
+  color: white;
+  text-decoration: none;
+}
+
 .cover__subtitle {
   font-style: normal;
   font-weight: normal;
@@ -286,4 +310,44 @@
   max-height: 66px;
   margin: 32px auto 0px;
   z-index: 1;
+}
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 92px auto 0;
+  width: 1184px;
+  height: 740px;
+}
+
+.footer__links  {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  transition: opacity .1s linear;
+}
+
+.footer__link:last-child{
+  margin-right: 0;
+} 
+
+.footer__link:hover {
+  opacity: 45%;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
 }
