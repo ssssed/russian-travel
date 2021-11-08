@@ -19,15 +19,21 @@
     url(../vendor/fonts/Inter-Black.svg) format("svg");
 }
 
+body {
+  background-color: #2A2C2F;
+}
+
 .page {
   width: 100vw;
   max-width: 1280px;
+  margin: 0 auto;
   background-color:#2A2C2F;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: white;
   overflow-x: hidden;
 }
 
+/* header */
 .header {
   width: 90.62%;
   padding-top: 2.734375%;
@@ -54,7 +60,7 @@
   transition: opacity .1s linear;
 }
 
-.header__link:last-child {
+.header__lang-link:last-child {
   margin-right: 0;
 }
 
@@ -63,6 +69,7 @@
   /* я бы для красоты сделал 45%, но раз 0.8, то пусть будет :( */
 }
 
+/* lead */
 .lead {
   width: 90.625%;
   padding: 4.6875% 0 8.984375%;
@@ -72,7 +79,6 @@
   margin: 0 auto;
   font-family: "Black", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 900;
   font-size: 96px;
   line-height: 1.04;
   text-align: center;
@@ -100,6 +106,8 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+/* intro */
 .intro {
   width: 90.625%;
   margin: 0 auto;
@@ -137,6 +145,8 @@
   font-size: 12px;
   line-height: 1.5;
 }
+
+/* photo-grid */
 .photo-grid {
   width: 90.625%;
   display: grid;
@@ -223,6 +233,7 @@
   margin-bottom: 0;
 }
 
+/* cover */
 .cover {
   width: 100vw;
   height: 62.5vw;
@@ -273,6 +284,8 @@
   margin: 22px auto 0;
   z-index: 1;
 }
+
+/* footer */
 .footer {
   width: 90.625%;
   margin: 0 auto;
@@ -280,6 +293,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .footer__links {
   display: flex;
 }
@@ -306,3 +320,108 @@
   line-height: 1.14;
   text-align: right;
 }
+
+/* для разрешений 1280+ */
+@media screen and (min-width: 1280px) {
+  
+  .page  {
+    width: 1280px;
+  }
+
+  .header {
+    width: 1184px;
+    margin: 0 48px;
+  }
+
+  .lead {
+    width: 984px;
+    height: 1005px;
+    padding-top: 56px;
+  }
+
+  .lead__title {
+    width: 720px;
+    font-style: normal;
+    font-size: 96px;
+    line-height: 1.04;
+    text-align: center;
+  }
+
+  .lead__subtitle {
+    width: 640px;
+    height: 72px;
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 32px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .lead__img {
+    width: 984px;
+    height: 615px;
+    margin: 0 auto 8px;
+  }
+
+  .lead__caption {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .intro {
+    width: 984px;
+  }
+
+  .intro__title {
+    width: 690px;
+    font-size: 54px;
+    line-height: 1.07; 
+  }
+
+  .intro__text {
+    width: 690px;
+    font-size: 16px;
+    line-height: 163%;
+  }
+  .intro__list {
+    width: 690px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .photo-grid {
+    width: 1184px;
+    height: 671px;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .photo-grid__item {
+    width: 284px;
+    max-height: 213px;
+  }
+}
+
+/* для разрешений 768+ */
+/* @media screen and (max-width: 1024px) {
+  
+  .page {
+    max-width: 1024px;
+    width: 100vw;
+  }
+
+  .lead__title {
+    width: 93.75%;
+  }
+
+  .lead__subtitle {
+    width: 83.33333333333333%;
+    text-align: center;
+  }
+
+  .lead__img {
+    width: 100vw;
+    min-height: 62.5vw;
+  }
+} */
