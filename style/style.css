@@ -165,7 +165,7 @@ body {
 /* places */
 .places {
   width: 90.625%;
-  min-height: 3292px;
+  height: 3292px;
   margin: 0 auto;
   padding: 92px 0;
   display: grid;
@@ -452,13 +452,17 @@ body {
     width: 1184px;
   }
 }
-
 /* для разрешений 768+ */
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   
   .page {
     max-width: 1024px;
     width: 100vw;
+  }
+
+  .lead {
+    width: 100%;
+    padding: 6.25% 0 11.45833333333333%;
   }
 
   .lead__title {
@@ -474,4 +478,97 @@ body {
     width: 100vw;
     min-height: 62.5vw;
   }
-} */
+
+  .lead__caption{
+    width: 20.703125%;
+    margin-left: 3.125%;
+  }
+
+  .intro {
+    width: 93.75;
+    margin: 0 3.125%;
+    padding-bottom: 11.45833333333333%;
+  }
+
+  .intro__title{
+    width: 100%;
+    font-size: 54px;
+    line-height: 1.07;
+  }
+
+  .intro__text{
+    width: 100%;
+    margin: 40px 0 33px;
+    font-size: 16px;
+    line-height: 163%;
+  }
+
+  .photo-grid {
+    width: 93.75%;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template: repeat(6, 15.86538461538462%) / repeat(2, 48.88888888888889%) ;
+  }
+
+  .places {
+    width: 93.75%;
+    height: 365.625vw;
+    grid-template: 75.65104166666667vw 69.66145833333333vw 62.890625vw 56.51041666666667vw 63.02083333333333vw / 100%;
+    row-gap: 9.505208333333333vw;
+  }
+
+  .place {
+    grid-template: 5.989583333333333vw 44.27083333333333vw / 44.27083333333333vw 45.83333333333333vw;
+    row-gap: 6.25vw;
+    column-gap: 3.645833333333333vw;
+    grid-template-areas:
+    "title url"
+    "img text";
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+    align-self: flex-end;
+  }
+
+  .place__img {
+    max-width: 340px;
+    max-height: 340px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .place__paragraph {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 163%;
+  }
+
+  .place__paragraph:last-child {
+    margin-bottom: 0;
+  }
+
+  .cover__title {
+    width: 72.91666666666667vw;
+    font-size: 72px;
+    line-height: 1.06;
+    text-align: center;
+    margin: 14.97395833333333vw auto 0;
+  }
+
+  .cover__subtitle {
+    width: 46.875vw;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .footer {
+    padding: 89px 0 24px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
