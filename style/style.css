@@ -151,7 +151,7 @@ body {
   width: 90.625%;
   display: grid;
   margin: 0 auto;
-  min-height: 942px;
+  /* min-height: 942px; */
   gap: 1.508620689655172%;
   grid-template: repeat(4, 23.88535031847134%) / repeat(3, 32.3275852368955%);
   column-gap: 1.508620689655172%;
@@ -170,18 +170,22 @@ body {
   padding: 92px 0;
   display: grid;
   grid-template: 19.44106925880923% 17.13244228432564% 17.13244228432564% 19.44106925880923% 17.13244228432564%/100%;
-  row-gap: 80px;
+  row-gap: 7.8125vw;
 }
 .place {
   display: grid;
   grid-template: 1fr 42.96875vw / 42.96875vw 44.7265625vw;
-  column-gap: 32px;
-  row-gap: 48px;
+  column-gap: 3.125vw;
+  row-gap: 4.6875vw;
   grid-template-areas:
     "title url"
-    "img text"
     "img text";
 }
+
+.place__text {
+  grid-area: text;
+}
+
 .place__title {
   font-family: "Black";
   font-style: normal;
@@ -217,9 +221,7 @@ body {
   text-decoration-line: underline;
   color: white;
 }
-.place__text {
-  /* grid-area: text; */
-}
+
 .place__paragraph {
   margin: 0 0 27px;
   grid-area: text;
@@ -391,15 +393,63 @@ body {
 
   .photo-grid {
     width: 1184px;
-    height: 671px;
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-    column-gap: 16px;
-    row-gap: 16px;
+    /* height: 671px; */
+    grid-template: repeat(3, 213px) / repeat(4, 284px);
+    gap: 16px;
   }
 
   .photo-grid__item {
     width: 284px;
-    max-height: 213px;
+    height: 213px;
+  }
+
+  .places {
+    margin: 0 auto;
+    grid-template: 660px 584px 584px 660px 585px / 100%;
+    row-gap: 80px;
+  }
+
+  .place {
+    column-gap: 40px;
+    row-gap: 48px;
+    grid-template: 1fr 460px / 460px 484px; 
+    grid-template-areas:
+    "title url"
+    "img text";
+    
+  }
+
+  .place__title {
+    font-size: 72px;
+    line-height: 1.06;
+  }
+
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 163%;
+  }
+
+  .place__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cover {
+    width: 1184px;
+    height: 740px;
+    margin: 0 auto;
+  }
+
+  .cover__title {
+    width: 560px;
+  }
+
+  .cover__subtitle {
+    width: 360px;
+  }
+
+  .footer {
+    width: 1184px;
   }
 }
 
