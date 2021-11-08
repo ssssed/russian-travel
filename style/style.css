@@ -1,6 +1,6 @@
 * {
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 /* импортирование обычного шрифта */
 @font-face {
@@ -21,7 +21,7 @@
 
 .page {
   width: 100vw;
-  max-width: 1024px;
+  max-width: 1280px;
   background-color:#2A2C2F;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: white;
@@ -30,7 +30,8 @@
 
 .header {
   width: 90.62%;
-  margin: 28px auto 0;
+  padding-top: 2.734375%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +65,8 @@
 
 .lead {
   width: 90.625%;
-  margin: 48px auto 92px;
+  padding: 4.6875% 0 8.984375%;
+  margin: 0 auto;
 }
 .lead__title {
   margin: 0 auto;
@@ -100,7 +102,8 @@
 }
 .intro {
   width: 90.625%;
-  margin: 0 auto 92px;
+  margin: 0 auto;
+  padding-bottom: 92px;
 }
 .intro__title {
   width: 74.35344827586207%;
@@ -108,6 +111,7 @@
   font-style: normal;
   font-size: 54px;
   line-height: 1.07;
+  margin: 0;
 }
 .intro__text {
   width: 74.35344827586207%;
@@ -152,7 +156,8 @@
 .places {
   width: 90.625%;
   min-height: 3292px;
-  margin: 92px auto;
+  margin: 0 auto;
+  padding: 92px 0;
   display: grid;
   grid-template: 19.44106925880923% 17.13244228432564% 17.13244228432564% 19.44106925880923% 17.13244228432564%/100%;
   row-gap: 80px;
@@ -219,9 +224,8 @@
 }
 
 .cover {
-  max-width: 100%;
-  max-height: 640px;
-  height: 100vw;
+  width: 100vw;
+  height: 62.5vw;
   position: relative;
   background-image: url(../images/cover-trains.jpg);
   background-size: cover;
@@ -238,6 +242,11 @@
   height: 100%;
   top: 0;
   left: 0;
+  transition: opacity 1s linear;
+}
+
+.cover:hover:before {
+  opacity: 0.8;
 }
 
 .cover__title {
@@ -265,10 +274,35 @@
   z-index: 1;
 }
 .footer {
+  width: 90.625%;
+  margin: 0 auto;
+  padding: 92px 0 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__links {
+  display: flex;
 }
+
 .footer__link {
+  margin-right: 18px;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.12;
 }
+
+.footer__link:last-child {
+  margin-right: 0;
+}
+
 .footer__copyright {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: right;
 }
