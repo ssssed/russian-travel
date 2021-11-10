@@ -14,7 +14,7 @@
   .place {
     column-gap: 40px;
     row-gap: 48px;
-    grid-template: 1fr 460px / 460px 484px; 
+    grid-template: 1fr 460px / 460px 484px;
     grid-template-areas:
     "title url"
     "img text";
