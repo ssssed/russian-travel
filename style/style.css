@@ -19,7 +19,7 @@
     url(../vendor/fonts/Inter-Black.svg) format("svg");
 }
 
-body {
+.body {
   background-color: #2A2C2F;
 }
 
@@ -155,10 +155,11 @@ body {
 /* photo-grid */
 .photo-grid {
   width: 90.625%;
+  min-height: 942px;
   display: grid;
   margin: 0 auto;
   gap: 1.508620689655172%;
-  grid-template: repeat(auto-fit, 23.88535031847134%) / repeat(auto-fit, 32.3275852368955%);
+  grid-template: repeat(auto-fit, 21.97265625vw) / repeat(auto-fit, 29.296875vw);
   column-gap: 1.508620689655172%;
   row-gap: 1.48619957537155%;
 }
@@ -180,7 +181,8 @@ body {
 }
 .place {
   display: grid;
-  grid-template: 1fr 42.96875vw / 42.96875vw 44.7265625vw;
+  width: 90.625vw;
+  grid-template: 1fr 42.96875vw / 42.96875vw 44.53125vw;
   column-gap: 3.125vw;
   row-gap: 4.6875vw;
   grid-template-areas:
@@ -417,6 +419,7 @@ body {
 
   .photo-grid {
     width: 1184px;
+    min-height: 0;
     grid-template: repeat(auto-fit, 213px) / repeat(auto-fit, 284px);
     gap: 16px;
   }
@@ -528,6 +531,7 @@ body {
 
   .photo-grid {
     width: 93.75%;
+    min-height: 0;
     column-gap: 16px;
     row-gap: 16px;
     grid-template: repeat(auto-fit, 15.86538461538462%) / repeat(auto-fit, 48.88888888888889%) ;
@@ -676,6 +680,7 @@ body {
 
   .photo-grid {
     width: 90vw;
+    min-height: 0;
     row-gap: 12px;
     grid-template: repeat(auto-fit, 67.5vw) / repeat(auto-fit, 90vw);
   }
