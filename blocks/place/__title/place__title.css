@@ -1,0 +1,36 @@
+.place__title {
+  font-family: "Black";
+  font-style: normal;
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.06;
+  align-self: flex-end;
+  grid-area: title;
+}
+
+@media screen and (min-width: 1280px) {
+
+  .place__title {
+    font-size: 72px;
+    line-height: 1.06;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .place__title {
+    font-size: calc(32px + 10 * ((100vw - 320px) / (768 - 320)));
+    line-height: 1.09;
+    margin: 0 16px 0;
+    grid-area: title;
+  }
+}
