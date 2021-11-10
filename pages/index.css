@@ -10,8 +10,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__lang-links/header__lang-links.css);
 @import url(../blocks/header/__lang-link/header__lang-link.css);
-/* active */
-@import url(../blocks/active/active.css);
+@import url(../blocks/header/__lang-link/_active/header__lang-link_active.css);
 /* logo */
 @import url(../blocks/logo/logo.css);
 /* lead */
