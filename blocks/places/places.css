@@ -21,7 +21,6 @@
 
   .places {
     width: 93.75%;
-    height: max-content;
     row-gap: 73px;
   }
 }
@@ -30,7 +29,6 @@
 
   .places {
     width: 100%;
-    height: max-content;
     padding: 20vw 0;
     row-gap: 50px;
   }

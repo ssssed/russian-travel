@@ -1,11 +1,12 @@
 .cover__title {
   width: 54.6875%;
-  font-family: "Black", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 900;
   font-style: normal;
   font-size: 72px;
   line-height: 1.06;
   text-align: center;
-  margin: 195px auto 0;
+  margin: 19.04296875vw auto 0;
   z-index: 1;
 }
 
@@ -13,6 +14,7 @@
 
   .cover__title {
     width: 560px;
+    margin: 195px auto 0;
   }
 }
 
