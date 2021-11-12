@@ -1,6 +1,6 @@
 .place {
   display: grid;
-  width: 90.625vw;
+  /* width: 90.625vw; */
   grid-template: 1fr 42.96875vw / 42.96875vw 44.53125vw;
   column-gap: 3.125vw;
   row-gap: 4.6875vw;
@@ -37,7 +37,7 @@
 @media screen and (max-width: 767px) {
 
   .place {
-    grid-template: 35px 46px 100vw min-content / 100vw;
+    grid-template: 35px 46px min-content min-content / 100%;
     row-gap: 32px;
     height: min-content;
     column-gap: 0;

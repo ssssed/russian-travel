@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 92px 0;
   display: grid;
-  grid-template: min-content min-content min-content min-content min-content / 100vw;
+  grid-template: min-content min-content min-content min-content min-content / 100%;
   row-gap: 80px;
 }
 
@@ -12,6 +12,7 @@
 
   .places {
     margin: 0 auto;
+    width: 984px;
     row-gap: 80px;
   }
 }
@@ -28,7 +29,7 @@
 @media screen and (max-width: 767px) {
 
   .places {
-    width: 100vw;
+    width: 100%;
     height: max-content;
     padding: 20vw 0;
     row-gap: 50px;
