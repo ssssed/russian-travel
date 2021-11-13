@@ -6,6 +6,7 @@
   line-height: 1.17;
   text-decoration: none;
   transition: opacity .1s linear;
+  color: white;
 }
 
 .header__lang-link:last-child {

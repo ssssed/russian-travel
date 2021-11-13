@@ -11,20 +11,11 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1280px) {
-
-  .place__paragraph {
-    font-size: 18px;
-    line-height: 163%;
-  }
-}
-
 @media screen and (max-width: 1023px) {
 
   .place__paragraph {
     margin-bottom: 25px;
     font-size: 16px;
-    line-height: 163%;
   }
 
   .place__paragraph:last-child {
@@ -36,7 +27,6 @@
 
   .place__paragraph {
     font-size: 16px;
-    line-height: 163%;
     margin: 0 16px 25px;
   }
 }

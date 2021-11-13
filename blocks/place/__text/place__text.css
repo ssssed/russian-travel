@@ -6,6 +6,5 @@
 
   .place__text {
     height: min-content;
-    grid-area: text;
   }
 }

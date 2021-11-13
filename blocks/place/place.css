@@ -24,13 +24,12 @@
 @media screen and (max-width: 1023px) {
   
   .place {
-    grid-template: 5.989583333333333vw 44.27083333333333vw max-content / 44.27083333333333vw 45.83333333333333vw;
+    grid-template: 5.989583333333333vw max-content / 44.27083333333333vw 45.83333333333333vw;
     row-gap: 6.25vw;
     column-gap: 3.645833333333333vw;
     grid-template-areas:
     "title url"
-    "img text"
-    ". text";
+    "img text";
   }
 }
 
@@ -40,7 +39,6 @@
     grid-template: 35px 46px min-content min-content / 100%;
     row-gap: 32px;
     height: min-content;
-    column-gap: 0;
     grid-template-areas:
     "title"
     "url"
