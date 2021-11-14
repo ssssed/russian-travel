@@ -2,9 +2,16 @@
   color: white;
   text-decoration: none;
   transition: opacity .1s linear;
-  width: 100%;
   z-index: 1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  width: 100%;
+  min-height: 62.5vw;
+}
+
+@media screen and (min-width: 1280px) {
+
+  .cover__link {
+    width: 1184px;
+    min-height: 740px;
+    margin: 0 auto;
+  }
 }
